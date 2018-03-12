@@ -20,3 +20,7 @@ Branches
   > git branch "MaNouvelleBranche"  >> créer une branche
   > git checkout "MaBranche"        >> se positionner sur une branche
   > git merge "MaBranche"           >> fusionner une branche avec la branche ou on est positionné
+  
+ Modifications
+  > git blame "MonFichier"          >> liste des dernier commits ligne par ligne
+  > git show SHA                    >> liste de toutes les modifications effectuées lors d'un commit

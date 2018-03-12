@@ -1,0 +1,9 @@
+Texte de mon autre fichier N°1
+
+Mes action avec git :
+  > je récupère en clonnant
+  > je mmodifie
+  > je commit (avec commentaire) sur ma machine
+  > je push (sur ma remote) pour mettre a jour mon github
+  > je pull (tire) de ma remote pour avoir les dernières modifs de faites
+  > je peux faire un checkout pour récupérer une ancienne version stage depuis le commit effectués

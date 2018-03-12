@@ -1,0 +1,138 @@
+
+SIAN@SIAN-PC MINGW32 ~
+$ cd rep_00/rep_003/demo_git
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ ls
+README.md  README.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git commit -am "Ajout du fichier README.txt"
+[master 7ae0884] Ajout du fichier README.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git push orign master
+fatal: 'orign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git push origin master
+Username for 'https://github.com': sian7
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sian7/demo_git.git
+   74680e3..7ae0884  master -> master
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/sian7/demo_git
+ * branch            master     -> FETCH_HEAD
+   7ae0884..8fd8ca3  master     -> origin/master
+Updating 7ae0884..8fd8ca3
+Fast-forward
+ README.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ cat README.txt
+Texte du document
+Simulation d'un projet
+
+Ajouter de puis gitHUB
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ vim readme.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git commit -am "modification avec vim en local"
+[master f697382] modification avec vim en local
+ 1 file changed, 2 insertions(+)
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git push origin master
+Username for 'https://github.com': sian7
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 185.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sian7/demo_git.git
+   8fd8ca3..f697382  master -> master
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/sian7/demo_git
+   f697382..416b2d7  master     -> origin/master
+Updating f697382..416b2d7
+Fast-forward
+ commande_git.txt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 commande_git.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ ls
+commande_git.txt  README.md  README.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ cat commande_git.txt
+Texte de mon autre fichier N°1
+
+Mes action avec git :
+  > je récupère en clonnant
+  > je mmodifie
+  > je commit (avec commentaire) sur ma machine
+  > je push (sur ma remote) pour mettre a jour mon github
+  > je pull (tire) de ma remote pour avoir les dernières modifs de faites
+  > je peux faire un checkout pour récupérer une ancienne version stage depuis le commit effectués
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ git log
+commit 416b2d76be702e52de9903a0e369fd0c61ae3751 (HEAD -> master, origin/master, origin/HEAD)
+Author: sian7 <30680969+sian7@users.noreply.github.com>
+Date:   Mon Mar 12 11:38:04 2018 +0100
+
+    Ajout de commande_git depuis gitHub
+
+    Fichier décrivant les commande de base git .
+
+commit f6973823f194c636e6cd96cb8a8cca6499389c8b
+Author: SIAN <dev.richard.jd@gmail.com>
+Date:   Mon Mar 12 11:30:23 2018 +0100
+
+    modification avec vim en local
+
+commit 8fd8ca3c07388704f4287352bed003a91f721e11
+Author: sian7 <30680969+sian7@users.noreply.github.com>
+Date:   Mon Mar 12 11:26:09 2018 +0100
+
+    Modifier depuis github
+
+commit 7ae0884ee78b554e57c783b155e64cc40c81bfca
+Author: SIAN <dev.richard.jd@gmail.com>
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ touch log.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$ ls
+commande_git.txt  log.txt  README.md  README.txt
+
+SIAN@SIAN-PC MINGW32 ~/rep_00/rep_003/demo_git (master)
+$
+

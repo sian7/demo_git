@@ -27,3 +27,13 @@ Branches
   
  .gitignore
   > créer un fichier .gitignore pour protéger les fichier de conf et de mdp en les listant dans ce fichier, le dépot ne les prendra pas en compte.
+
+ > git stash & git stash pop      >> mettre de coter et récupérer des modification (utiliser apply pour ne pas vider stash)         
+ 
+ Pull request
+  > fork                          >> faire une copie d'un projet git-hub sur son repo github
+  > clone sur le depot local
+  > création d'une branche au nom de la feature (fonctionnalité)
+  > push origin "MaBranche"
+  > pull request avec message expliquant la feature, les modifications.
+  

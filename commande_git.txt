@@ -24,3 +24,6 @@ Branches
  Modifications
   > git blame "MonFichier"          >> liste des dernier commits ligne par ligne
   > git show SHA                    >> liste de toutes les modifications effectuées lors d'un commit
+  
+ .gitignore
+  > créer un fichier .gitignore pour protéger les fichier de conf et de mdp en les listant dans ce fichier, le dépot ne les prendra pas en compte.

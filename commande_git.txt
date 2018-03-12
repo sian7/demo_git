@@ -1,9 +1,22 @@
 Texte de mon autre fichier N°1
 
 Mes action avec git :
-  > je récupère en clonnant
+  > git init                        >> j'initialise un dépot sur un répertoire
+  > git add "MonFichier"            >> j'ajoute à l'index le fichier/dossier
+  > git add .                       >> j'ajoute tout se qu'il y a dedans le dépôt à l'index
+
+
+  > git clone                       >> je récupère en clonnant   
   > je mmodifie
-  > je commit (avec commentaire) sur ma machine
-  > je push (sur ma remote) pour mettre a jour mon github
-  > je pull (tire) de ma remote pour avoir les dernières modifs de faites
-  > je peux faire un checkout pour récupérer une ancienne version stage depuis le commit effectués
+  > git commit (-a -m -am)          >> je commit (avec commentaire) sur ma machine
+  > git push                        >> je push (sur ma remote) pour mettre a jour mon github
+  > git pull                        >> je pull (tire) de ma remote pour avoir les dernières modifs de faites
+  > je peux faire un checkout pour récupérer une ancienne version stage depuis le commit effectués :
+  > git checkout SHA                >> je récupère une version de fichier
+
+
+Branches
+  > git branch                      >> connaitres les branches
+  > git branch "MaNouvelleBranche"  >> créer une branche
+  > git checkout "MaBranche"        >> se positionner sur une branche
+  > git merge "MaBranche"           >> fusionner une branche avec la branche ou on est positionné
